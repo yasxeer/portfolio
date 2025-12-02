@@ -4,83 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasir Shamsher - Portfolio</title>
+
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            color: #333;
+            font-family: "Poppins", sans-serif;
+            background: #f3f6fa;
+            color: #222;
         }
 
-        .header {
-            background: #2b67f6;
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #2050f3, #2b67f6);
             color: white;
-            padding: 40px 20px;
-            text-align: center;
         }
 
-        .header h1 {
+        .hero img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-right: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        .hero-text h1 {
             margin: 0;
-            font-size: 40px;
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            margin-top: 10px;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 30px auto;
-            background: white;
             padding: 30px;
-            border-radius: 10px;
+            background: white;
+            border-radius: 12px;
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
 
         h2 {
-            border-left: 4px solid #2b67f6;
-            padding-left: 10px;
+            border-left: 5px solid #2b67f6;
+            padding-left: 12px;
+            font-size: 28px;
+            margin-top: 35px;
         }
 
         .info {
-            font-size: 18px;
             line-height: 1.8;
+            font-size: 18px;
         }
 
         .skills span {
             display: inline-block;
-            margin: 5px;
-            padding: 8px 12px;
-            background: #e8eeff;
-            border-radius: 5px;
+            margin: 6px;
+            padding: 10px 15px;
+            background: #e9eeff;
             color: #2b67f6;
-            font-weight: bold;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .contact a {
+            color: #2b67f6;
+            text-decoration: none;
+            font-weight: 600;
         }
 
         .footer {
             text-align: center;
-            margin-top: 30px;
             padding: 20px;
+            margin-top: 20px;
             color: #666;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="header">
-        <h1>Yasir Shamsher</h1>
-        <p>Software Engineering Student | FAST-NUCES</p>
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <img src="images/profile.jpg" alt="Yasir Shamsher">
+        <div class="hero-text">
+            <h1>Yasir Shamsher</h1>
+            <p>Software Engineering Student | FAST-NUCES</p>
+        </div>
     </div>
 
+    <!-- MAIN CONTENT -->
     <div class="container">
+
         <h2>About Me</h2>
         <p class="info">
-            Hi! I'm <strong>Yasir Shamsher</strong>, a passionate Software Engineering 
-            student at <strong>FAST–NUCES</strong>. I am currently learning software 
-            development, problem-solving, and modern web technologies.  
-            I love exploring new tools, writing clean code, and building exciting projects.
-        </p>
-
-        <h2>Contact</h2>
-        <p class="info">
-            📧 Email: <a href="mailto:p256525@per.nu.edu.pk">p256525@per.nu.edu.pk</a>
+            Hey! I'm <strong>Yasir Shamsher</strong>, a passionate Software Engineering student at 
+            <strong>FAST-NUCES</strong>. I love coding, learning new technologies, and building creative
+            real-world projects. My focus areas include software development, web technologies, and 
+            problem-solving.
         </p>
 
         <h2>Skills</h2>
@@ -96,11 +124,21 @@
 
         <h2>Goals</h2>
         <p class="info">
-            - Improve coding and problem-solving skills. <br>
-            - Work on real-world software development projects. <br>
-            - Contribute to open-source. <br>
-            - Grow as a full-stack developer.
+            ✔ Grow as a full-stack developer <br>
+            ✔ Work on professional software projects <br>
+            ✔ Improve problem-solving and DSA <br>
+            ✔ Contribute to open-source <br>
         </p>
+
+        <h2>Contact</h2>
+        <p class="info contact">
+            📞 <strong>Phone:</strong> 0318-1669371 <br>
+            📧 <strong>Email:</strong> <a href="mailto:p256525@per.nu.edu.pk">p256525@per.nu.edu.pk</a> <br>
+            📸 <strong>Instagram:</strong> 
+            <a href="https://instagram.com/yas.xeer" target="_blank">@yas.xeer</a>, 
+            <a href="https://instagram.com/x.as.numb.07" target="_blank">@x.as.numb.07</a>
+        </p>
+
     </div>
 
     <div class="footer">
